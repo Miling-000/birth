@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(23, 104, 118);
+    display: flex;
+    justify-content: center;
+}
+img{
+    background-color: white; /* 設定背景為白色 */
+    display: flex;
+    justify-content: center;
+    max-width: 50%; /* 圖片寬度最多占父容器的 100% */
+    height: auto; /* 高度自動調整，保持比例 */
+}
+.輸入區域{
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    width: 300px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);/*水平偏移 垂直偏移 模糊半徑 顏色(紅，綠，藍，透明度)*/
+}
+.文字欄{
+    justify-content: center;
+    flex-grow: 1;
+    border: none;
+    background-color: #F0F4F8;
+    padding: 10px 15px;
+    outline: none;
+}
+.繼續{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.重新{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;  /* 讓容器佔滿整個螢幕 */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* 響應式樣式 - 當螢幕寬度小於 480px 時 */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
